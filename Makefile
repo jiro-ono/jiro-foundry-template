@@ -10,8 +10,8 @@ build:
 rebuild: clean build
 install: init
 init:
-	git submodules update --init --recursive
-	git update-index --asume-unchaged playground/*
+	git submodule update --init --recursive
+	git update-index --assume-unchanged playground/*
 	forge install
 test:
 	forge test -vv
